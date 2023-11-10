@@ -12,8 +12,6 @@ body {
     width: 100px;
     opacity: "0.4";
     transition: all .3s;
-    &.red { background-color: red;}
-    &.yellow {background-color: yellow;}
     &.selected{box-shadow: #f8ffcc 0px 0px 50px 8px;}
 }
 
