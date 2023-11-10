@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-image: url(https://images.theconversation.com/files/393210/original/file-20210401-13-z6rl6z.jpg?ixlib=rb-1.1.0&rect=9%2C0%2C2994%2C1999&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip);
+  background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.light {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    opacity: "0.4";
+    transition: all .3s;
+    &.red { background-color: red;}
+    &.yellow {background-color: yellow;}
+    &.selected{box-shadow: #f8ffcc 0px 0px 50px 8px;}
+}
+
+.light:hover  {
+    opacity: 1!important;
+    /* box-shadow: rgba(246, 250, 255, 0.562) 8px 8px; */
+}
+
+.trafficLight {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    /* border: 1px solid black; */
+    width: fit-content;
+    margin: auto;
+    background-color: darkslategray;
+    border-radius: 30px;
+}
+
+.stick {
+    width: 20px;
+    height: 100px;
+    background-color: black;
+    margin:auto;
+}
+button h1 {
+    display: none;
+}
+
+button {
+    margin: auto;
+    width: 155px;
+    height: 38px;
+    display: flex;
+    margin-top: 11px;
+    background: black;
+    color: skyblue;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
