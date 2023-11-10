@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Light } from "./light"
+import { Light } from "./Light"
 
 export default function App(){
   const [activeLight, setActiveLight] = useState("red");

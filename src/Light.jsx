@@ -1,4 +1,4 @@
-import "./light.css";
+import "./light.css"
 
 export function Light({ color, opacity }) {
     return (
