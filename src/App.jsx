@@ -3,9 +3,13 @@ import { Light } from "./Light"
 
 export default function App(){
   const [activeLight, setActiveLight] = useState("red");
+  const [isActive, setIsActive] = useState(false)
 
 useEffect(() => {
   const interval = setInterval(() => {
+    if (!isActive) {
+      return
+    }
     switch(activeLight) {
       case "red":
         setActiveLight("yellow")
@@ -31,7 +35,7 @@ useEffect(() => {
       <Light color= "yellow" opacity={activeLight === "yellow"? 1:0.4}/>
       <Light color= "green" opacity={activeLight === "green"? 1:0.4}/>
     </div>
-<button>
+<button onClick={()=> setIsActive(!isActive)}>
   <h1>{activeLight}</h1>
 ON / OFF</button>
     </>
