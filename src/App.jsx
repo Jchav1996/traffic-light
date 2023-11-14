@@ -20,7 +20,7 @@ useEffect(() => {
           case "green":
             setActiveLight("red")
     }
-  }, 2000);
+  }, 1000);
 
   return () => clearInterval(interval);
 })
